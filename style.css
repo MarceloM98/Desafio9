@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  --bg-body: #E5E5E5;
+  --bg-main: #FFFFFF;
+  --bg-soundBtn: #e1e1e6;
+  --bg-soundBtnClick: #02799d;
+  --text-color: #323238;
+  --primary-color: #323238;
+}
+
+body{
+  display: grid;
+  min-height: 100vh;
+  background-color: var(--bg-body)
+}
+
+main{
+  justify-self: center;
+  align-self: center;
+
+  width: 128rem;
+  height: 72rem;
+  background-color: var(--bg-main);
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+span{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+
+  color: var(--text-color)
+}
+
+button{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.time-controls{
+  display: flex;
+  gap: 4rem;
+}
+
+.sound{
+  max-width: 30.8rem;
+  max-height: 33.6rem;
+  display: grid;
+  grid-template-areas: 
+  "A B"
+  "C D";
+  gap: 3.2rem;
+}
+
+.sound-controls{
+  background-color: var(--bg-soundBtn);
+  border-radius: 2.4rem;
+  width: 13.8rem;
+  height: 15.2rem;
+}
+
+.svg-active path{
+  fill: white;
+}
+
+.sound-controls-active{
+background-color: #02799d;
+}
