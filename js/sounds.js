@@ -1,9 +1,9 @@
 export default function() {
   
-  const forestAudio = new Audio("../assets/floresta.wav")
-  const rainAudio = new Audio("../assets/chuva.wav")
-  const coffeShopAudio = new Audio("../assets/cafeteria.wav")
-  const fireplaceAudio = new Audio("../assets/lareira.wav")
+  const forestAudio = new Audio("https://github.com/MarceloM98/Desafio9/raw/master/assets/Floresta.wav")
+  const rainAudio = new Audio("https://github.com/MarceloM98/Desafio9/raw/master/assets/Chuva.wav")
+  const coffeShopAudio = new Audio("https://github.com/MarceloM98/Desafio9/raw/master/assets/Cafeteria.wav")
+  const fireplaceAudio = new Audio("https://github.com/MarceloM98/Desafio9/raw/master/assets/Lareira.wav")
 
 
   forestAudio.loop = true
