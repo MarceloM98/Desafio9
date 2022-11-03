@@ -12,6 +12,7 @@ const addTimeButton = document.querySelector('.time-controls button:nth-child(3)
 const removeTimeButton= document.querySelector('.time-controls button:nth-child(4)')
 const minutesDisplay = document.querySelector("#minutes")
 const secondsDisplay = document.querySelector("#seconds")
+let timerRunning = false
 let minutes = minutesDisplay.innerText
 
 let soundActive = false
@@ -85,10 +86,14 @@ removeTimeButton.addEventListener('click', ()=>{
 })
 
 playButton.addEventListener('click', ()=>{
-  timer.start()
+  if(!timerRunning){
+    timer.start()
+    timerRunning = true
+  }
 
 })
 stopButton.addEventListener('click', ()=>{
  timer.stop()
+ timerRunning = false
 })
 

@@ -13,7 +13,7 @@ export default function (){
   }
 
   function removeTime(minutes){
-    if(Number(minutes.innerText) > 0){
+    if(Number(minutes.innerText) >= 5){
       minutes.innerText = Number(minutes.innerText) - 5
     }
     if (Number(minutes.innerText) < 10){
